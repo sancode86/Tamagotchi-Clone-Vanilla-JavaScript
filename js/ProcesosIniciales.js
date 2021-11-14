@@ -1,0 +1,4 @@
+function ProcesosIniciales() {
+  loader();
+  initTime();
+}

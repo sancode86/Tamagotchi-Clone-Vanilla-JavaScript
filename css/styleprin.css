@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+h1,
+h2,
+p {
+  font-family: "Rubik", sans-serif;
+  color: #f27cae;
+  font-size: 16px;
+  line-height: 2px;
+}
+
+.loaderimg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 310px;
+  height: 440px;
+}
+
+.imagengameclase {
+  top: 50%;
+  left: 50%;
+}
+
+.perderreiniciar {
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.icono {
+  width: 77px;
+  height: 77px;
+}
+
+.icono2 {
+  width: 30px;
+}
+
+button {
+  padding: 20px;
+}

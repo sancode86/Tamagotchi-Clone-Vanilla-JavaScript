@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Hojas de estilo página principal -->
+  <link rel="stylesheet" href="css/styleprin.css">
+  <link rel="stylesheet" href="css/loader.css">
+  <script src="js/ProcesosIniciales.js"></script>
+  <script src="js/time.js"></script>
+  <script src="js/barradeestado.js"></script>
+  <script src="js/acciones.js"></script>
+  <title>❤ Juana ❤</title>
+</head>
+<body onload="ProcesosIniciales()" style="margin:0;">
+  <div id="loader">
+    <img class="loaderimg" src="img/intro.gif" alt="juana">
+  </div>
+  <div style="display:none;" id="contenidoweb" class="animate-bottom">
+    <!-- página principal -->
+    <!-- Preloader experimento -->
+    <div id="preloadertest">
+      <img class="icono" src="img/comer.gif">
+      <img class="icono" src="img/dormir.gif">
+      <img class="icono" src="img/jugar.gif">
+      <img class="icono" src="img/sobrecito.gif">
+    </div>
+    <div class="main">
+      <div id="accionesmenu">
+        <img class="icono2" src="img/comer.png"> <img src="img/barra/barra100.png" id="BarraComida" width="300px">
+        <img class="icono2" src="img/dormir.png"><img src="img/barra/barra100.png" id="BarraDormir" width="300px">
+        <img class="icono2" src="img/jugar.png"><img src="img/barra/barra100.png" id="BarraJuego" width="300px">
+      </div>
+      <div class="imagengameclase">
+        <img src="img/normal.gif" id="imagengame" width="300px">
+        <img style="display:none;" src="img/gameover.gif" id="gameover" width="300px">
+        <img style="display:none;" src="img/ganar.gif" id="ganar" width="300px">
+      </div>
+      </br>
+      <div id="accionesmenu2">
+        <img class="icono" id="botoncomer" onclick="accionComida()" src="img/botoncomer.gif">
+        <img class="icono" id="botondormir" onclick="accionDormir()" src="img/botondormir.gif">
+        <img class="icono" id="botonjugar" onclick="accionJugar()" src="img/botonjugar.gif">
+        <img class="icono" id="botonsobrecito" onclick="accionSobrecito()" src="img/botonsobrecito.gif">
+      </div>
+      <div class="perderreiniciar">
+        </br>
+        <button style="display:none;" style="text-align:center;" id="reiniciar" onclick="reiniciar()">Reintentar</button>
+      </div>
+      <p>Estado: <span id="juegofin">Prupsiando</span></p>
+      <p>Tiempo Total: <span id="tiempototal">Tiempo Total</span> segundos (160seg->Ganar)</p>
+      <p>Hambre: <span id="MostrarComida">Cargando...</span></p>
+      <p>Sueño: <span id="MostrarDormir">Cargando...</span></p>
+      <p>Necesidad Juego: <span id="MostrarJuego">Cargando...</span></p>
+      <p>Geditud Random: <span id="MostrarTiempo">Cargando...</span></p>
+    </div>
+    <!-- FIN página principal -->
+  </div>
+  <!-- Loader página principal -->
+  <script>
+    var myVar;
+    function loader() {
+      myVar = setTimeout(showPage, 6000);
+    }
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("contenidoweb").style.display = "block";
+      document.getElementById("preloadertest").style.display = "none";
+    }
+  </script>
+</body>
+</html>
